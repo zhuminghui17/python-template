@@ -37,12 +37,12 @@ This document provides an overview of the key components within the project repo
 The project uses GitHub Actions, employing the following commands:
 
 - `make install`: Installs project dependencies.
-![make install](images\make_install.jpg)
+![make install](.\images\make_install.jpg)
 - `make test`: Runs unit tests.
-![make test](images\make_test.jpg)
+![make test](.\images\make_test.jpg)
 - `make format`: Formats the code according to the specified style.
 - `make lint`: Checks the code for potential errors and style issues.
-![other](images\other.jpg)
+![other](.\images\other.jpg)
 
 ### CI Results
-![GitHub Actions](images\github_actions.jpg)
+![GitHub Actions](.\images\github_actions.jpg)
