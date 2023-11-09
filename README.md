@@ -2,31 +2,47 @@
 
 This is the Python template for IDS721 Data Engineering Systems.
 
+This document provides an overview of the key components within the project repository.
 
+### `.devcontainer`
+- **`Dockerfile`**: Defines the container's build process and environment.
+- **`devcontainer.json`**: Contains configuration settings for the development environment in VS Code.
 
+### `workflows`
+- Contains GitHub Actions workflows for automated build, test, and deployment pipelines.
 
+### `.gitignore`
+- Lists the files and directories that Git should ignore.
 
-## Template for Python projects 
+### `Makefile`
+- Used for automating compilation, testing, and other development tasks on Unix-based systems.
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+### `README.md`
+- Offers instructions and an introduction to the project.
 
-Things included are:
+### `main.py`
+- The main Python script of the project.
 
-* `Makefile`
+### `requirements.txt`
+- Specifies all necessary libraries and packages for the project.
 
-* `Pytest`
+### `test_main.py`
+- Test script designed to validate the functionality of `main.py` within IDEs.
 
-* `pandas`
+### `img`
+- Stores screenshots or images of the project's execution results.
 
-* `Pylint`
+## Continuous Integration with GitHub Actions
 
-* `Dockerfile`
+The project uses GitHub Actions, employing the following commands:
 
-* `GitHub copilot`
+- `make install`: Installs project dependencies.
+![make install](images\make_install.jpg)
+- `make test`: Runs unit tests.
+![make test](images\make_test.jpg)
+- `make format`: Formats the code according to the specified style.
+- `make lint`: Checks the code for potential errors and style issues.
+![other](images\other.jpg)
 
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions` 
-
+### CI Results
+![GitHub Actions](images\github_actions.jpg)
